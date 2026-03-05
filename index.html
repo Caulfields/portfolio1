@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white text-gray-900 leading-relaxed">
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
@@ -23,14 +23,15 @@
     <!-- /Yandex.Metrika counter -->
     
     <!-- Navigation -->
-    <nav class="w-full bg-white\/80 backdrop-blur-md z-50 border-b border-gray-100">
+    <nav class="w-full fixed top-0 z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <div class="text-xl font-semibold tracking-tight">Портфолио</div>
+                <a href="#" class="text-xl font-semibold tracking-tight serif">Портфолио</a>
                 <div class="hidden md:flex space-x-8 text-sm">
-                    <a href="#about" class="hover:text-gray-600 transition-colors">О себе</a>
-                    <a href="#work" class="hover:text-gray-600 transition-colors">Работы</a>
-                    <a href="#contact" class="hover:text-gray-600 transition-colors">Контакты</a>
+                    <a href="#about" class="hover:text-accent transition-colors">О себе</a>
+                    <a href="#work" class="hover:text-accent transition-colors">Кейсы</a>
+                    <a href="#examples" class="hover:text-accent transition-colors">Примеры</a>
+                    <a href="#contact" class="hover:text-accent transition-colors">Контакты</a>
                 </div>
                 <button class="md:hidden">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,280 +42,167 @@
         </div>
     </nav>
 
-    <!-- About Section -->
-    <section id="about" class="pt-20 pb-16 bg-gradient-subtle">
-        <div class="max-w-4xl mx-auto px-6 content-left">
-            <h1 class="text-4xl md:text-5xl font-light serif mb-6 content-left">
+    <!-- Hero Section -->
+    <section id="about" class="hero pt-32 pb-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-light serif mb-6">
                 Игорь Сафронов
             </h1>
-            <h2 class="text-2xl md:text-3xl text-gray-600 mb-8 content-left">Копирайтер, автор, редактор</h2>
+            <h2 class="text-xl md:text-2xl text-gray-500 mb-8 font-light">Контент-менеджер и копирайтер</h2>
             
-            <div class="mb-8 content-left">
-                <p class="text-gray-600 mb-2">📧 igory345@gmail.com</p>
-                <p class="text-gray-600">💬 <a href="https://t.me/text2321" target="_blank" class="hover:text-gray-800 transition-colors underline">Телеграм: @text2321</a></p>
+            <div class="contact-info mb-10">
+                <a href="mailto:igory345@gmail.com" class="flex items-center gap-2">
+                    <span>📧</span>
+                    <span>igory345@gmail.com</span>
+                </a>
+                <a href="https://t.me/text2321" target="_blank" class="flex items-center gap-2">
+                    <span>💬</span>
+                    <span>@text2321</span>
+                </a>
             </div>
 
-            <div class="mb-8 content-left">
-                <p class="text-gray-700 mb-4 content-left">Делаю контент по ТЗ: статьи, посты для соцсетей, тексты для сайтов. Самостоятельно изучаю тему, провожу фатчекинг, при необходимости задаю уточняющие вопросы редактору и эксперту.</p>
-                <p class="text-gray-700 mb-4 content-left">Пишу как информационные материалы, так и рекламные тексты, адаптируя стиль под задачи и аудиторию. Согласовываю с редактором, могу сделать простую картинку или поставить техническое задание дизайнерам.</p>
-                <p class="text-gray-700 mb-4 content-left">Тут подробнее про опыт и примеры работ👇</p>
+            <div class="max-w-2xl">
+                <p class="text-gray-700 text-lg mb-6">Веду Telegram-каналы в разных нишах, выстраиваю редакционный процесс от контент-плана до публикации. Параллельно пишу сам — экспертные статьи, лонгриды, рекламные тексты, кейсы.</p>
+                <p class="text-gray-700 text-lg mb-6">Работал с темами IT, финтех, кибербезопасность, онлайн-образование, юриспруденция — и быстро разбираюсь в новых: изучаю тему, нахожу экспертов, выстраиваю структуру материала.</p>
+                <p class="text-gray-700 text-lg mb-6">Умею объяснять сложное простым языком, ставить ТЗ дизайнерам, координировать авторов и держать дедлайны. Использую AI-инструменты чтобы работать быстрее без потери качества.</p>
+                <p class="text-gray-500">Тут подробнее про опыт и примеры работ 👇</p>
             </div>
         </div>
     </section>
 
-    <!-- Work Section -->
-    <section id="work" class="section py-20">
-        <div class="max-w-6xl mx-auto px-6 content-left">
-            <h2 class="text-3xl md:text-4xl serif font-medium mb-16">Портфолио</h2>
+    <!-- Work Section: Cases -->
+    <section id="work" class="section py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl serif font-medium mb-16 section-title">Кейсы</h2>
             
-            <div class="grid gap-12">
-                <!-- Articles Section -->
+            <div class="work-grid">
+                <!-- Case 1: IT Content -->
+                <div class="work-card">
+                    <h4 class="text-xl serif font-medium mb-4">IT статьи для изданий</h4>
+                    <p class="text-gray-600 mb-6">
+                        Как я подхожу к написанию статей для профессиональных изданий.
+                    </p>
+                    <a href="case-it-content.html" class="text-accent hover:text-gray-900 transition-colors inline-flex items-center gap-1">
+                        <span>Подробнее</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Case 2: Content Management -->
+                <div class="work-card">
+                    <h4 class="text-xl serif font-medium mb-4">Контент-менеджмент</h4>
+                    <p class="text-gray-600 mb-6">
+                        Ведение нескольких Telegram-каналов в агентстве. Редакционный процесс, координация авторов, инструменты.
+                    </p>
+                    <a href="case-content-management.html" class="text-accent hover:text-gray-900 transition-colors inline-flex items-center gap-1">
+                        <span>Подробнее</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Case 3: SMM and Telegram Creative -->
+                <div class="work-card">
+                    <h4 class="text-xl serif font-medium mb-4">SMM и рекламные креативы</h4>
+                    <p class="text-gray-600 mb-6">
+                        Процесс создания рекламных постов.
+                    </p>
+                    <a href="case-smm-telegram.html" class="text-accent hover:text-gray-900 transition-colors inline-flex items-center gap-1">
+                        <span>Подробнее</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Case 4: Website and Landing Texts (hidden) -->
+                <!-- <div class="work-card">
+                    <h4 class="text-xl serif font-medium mb-4">Тексты для сайтов и лендингов</h4>
+                    <p class="text-gray-600 mb-6">
+                        Как я пишу тексты для сайтов.
+                    </p>
+                    <a href="case-website-texts.html" class="text-accent hover:text-gray-900 transition-colors inline-flex items-center gap-1">
+                        <span>Подробнее</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="section py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl serif font-medium mb-16 section-title">Примеры работ</h2>
+            
+            <div class="max-w-3xl space-y-12">
+
                 <div>
-                    <h3 class="text-2xl serif font-medium mb-8 text-gray-800">Статьи</h3>
-                    
-                    <div class="grid gap-8">
-                        <!-- Article 1 -->
+                    <h3 class="text-lg font-semibold text-gray-400 uppercase tracking-widest mb-8">Статьи</h3>
+
+                    <div class="space-y-10">
                         <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="https://securitymedia.org/info/kadry-dlya-ekonomiki-dannykh-podgotovka-ib-spetsialistov-novogo-pokoleniya.html" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Кадры для экономики данных. Подготовка ИБ-специалистов нового поколения
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Написать статью для отраслевого издания SecurityMedia о подготовке ИБ-специалистов. Нужно было показать проблемы обучения людей в сфере информационной безопасности, объяснить изменения в требованиях к специалистам и показать новые подходы к их обучению.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Провел интервью с руководителем рекрутинга компании «Бастион», проанализировал тренды рынка ИБ-кадров и перевел технический материал в понятную статью.
-                            </p>
+                            <a href="https://securitymedia.org/info/kadry-dlya-ekonomiki-dannykh-podgotovka-ib-spetsialistov-novogo-pokoleniya.html" target="_blank" class="text-xl serif font-medium text-gray-900 hover:text-accent transition-colors">Кадры для экономики данных. Подготовка ИБ-специалистов нового поколения</a>
+                            <p class="text-gray-500 mt-2 mb-1"><span class="font-medium text-gray-700">Задача:</span> Написать статью для отраслевого издания SecurityMedia о подготовке ИБ-специалистов. Нужно было показать проблемы обучения людей в сфере информационной безопасности.</p>
+                            <p class="text-gray-500"><span class="font-medium text-gray-700">Что я делал:</span> Провел интервью с руководителем рекрутинга, проанализировал тренды рынка ИБ-кадров и перевел технический материал в понятную статью.</p>
                         </div>
 
-                        <!-- Article 2 -->
                         <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="https://globalcio.ru/news/50579/" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Отказ от зарубежных фаерволов: российская компания мигрировала 6000 правил на UserGate всего за 2 недели
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Написать кейс-статью о крупной миграции с зарубежных фаерволов на российское решение UserGate. Нужно было показать техническую сложность проекта, преимущества отечественного ПО и убедить читателей в возможности быстрого перехода.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Изучил техническую документацию проекта и структурировал материал в понятную историю.
-                            </p>
+                            <a href="https://globalcio.ru/news/50579/" target="_blank" class="text-xl serif font-medium text-gray-900 hover:text-accent transition-colors">Отказ от зарубежных фаерволов: российская компания мигрировала 6000 правил на UserGate всего за 2 недели</a>
+                            <p class="text-gray-500 mt-2 mb-1"><span class="font-medium text-gray-700">Задача:</span> Написать кейс-статью о крупной миграции с зарубежных фаерволов на российское решение.</p>
+                            <p class="text-gray-500"><span class="font-medium text-gray-700">Что я делал:</span> Изучил техническую документацию проекта и структурировал материал в понятную историю.</p>
                         </div>
 
-                        <!-- Article 3 -->
                         <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="https://docs.google.com/document/d/1UMMeeC6v-_VyUlhijJp33UBldlLRDzGArSIQ2i5D5OU/edit?usp=sharing" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Киберстрахование: зачем бизнесу платить за защиту до атаки
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Написать экспертную статью о киберстраховании для компаний, которая объяснила бы актуальность этого инструмента в условиях роста киберугроз. Нужно было рассказать о теме управления цифровыми рисками и показать практическую пользу страхования.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Структурировал материал от базовых понятий до конкретных действий: что это → зачем нужно → как внедрить → что будет дальше. Перевел сложную финансовую тематику на понятный язык, подкрепил аргументы конкретными цифрами. Материал не был опубликован из-за изменения редакционной политики издания.
-                            </p>
+                            <a href="https://docs.google.com/document/d/1UMMeeC6v-_VyUlhijJp33UBldlLRDzGArSIQ2i5D5OU/edit?usp=sharing" target="_blank" class="text-xl serif font-medium text-gray-900 hover:text-accent transition-colors">Киберстрахование: зачем бизнесу платить за защиту до атаки</a>
+                            <p class="text-gray-500 mt-2 mb-1"><span class="font-medium text-gray-700">Задача:</span> Написать экспертную статью о киберстраховании для компаний, которая объяснила бы актуальность этого инструмента в условиях роста киберугроз.</p>
+                            <p class="text-gray-500"><span class="font-medium text-gray-700">Что я делал:</span> Структурировал материал от базовых понятий до конкретных действий: что это → зачем нужно → как внедрить → что будет дальше. Перевел сложную финансовую тематику на понятный язык, подкрепил аргументы конкретными цифрами. Материал не был опубликован из-за изменения редакционной политики издания.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Website Texts Section -->
-                <div class="mt-12 pt-8 border-t border-gray-200">
-                    <h3 class="text-2xl serif font-medium mb-8 text-gray-800">Текста для сайтов</h3>
-                    
-                    <div class="grid gap-8">
-                        <!-- Civil Law Services Page -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-400 uppercase tracking-widest mb-8">SEO</h3>
+
+                    <div class="space-y-10">
                         <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="https://www.webvibestudio.site/projects/project-2/law-firm/civil-law/" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Страница услуг по гражданскому праву для юридической фирмы
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Создать информативную страницу для юридической фирмы, специализирующейся на гражданском праве. Нужно было объяснить сложные правовые концепции простым языком и показать практическую пользу услуг фирмы.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Разработал структуру страницы с акцентом на проблемы клиентов, создал понятные описания услуг, написал разделы о процессе работы и часто задаваемых вопросах. Использовал убедительные формулировки для повышения конверсии.
-                            </p>
+                            <a href="https://dpostandart.ru/articles/rol-agentstv-po-podboru-personala-v-krizisnyie-vremena" target="_blank" class="text-xl serif font-medium text-gray-900 hover:text-accent transition-colors">Роль агентств по подбору персонала в кризисные времена</a>
+                            <p class="text-gray-500 mt-2 mb-1"><span class="font-medium text-gray-700">Задача:</span> Написать статью для сайта кадрового агентства о роли рекрутинговых компаний в кризисные периоды. Нужен был базовый SEO-текст.</p>
+                            <p class="text-gray-500"><span class="font-medium text-gray-700">Что я делал:</span> Написал статью, показал практическую ценность услуг агентства в сложные времена.</p>
                         </div>
 
-                        <!-- Debt Recovery Case Study -->
                         <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="https://www.webvibestudio.site/projects/project-2/law-firm/case-debt-recovery-15m/" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Кейс-статья о взыскании задолженности на 15 млн рублей
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Подготовить кейс-статью о успешном судебном споре по взысканию крупной задолженности для юридической фирмы. Требовалось показать профессионализм команды и эффективность предлагаемых услуг.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Структурировал материал в формате истории успеха, подчеркнул ключевые моменты стратегии и результат для клиента. Добавил конкретные цифры и временные рамки для повышения доверия.
-                            </p>
+                            <a href="https://www.hostcomp.ru/retro-kontent-v-vk-kak-nostalgicheskie-posty-poluchayut-maksimalnoe-kolichestvo-lajkov.html" target="_blank" class="text-xl serif font-medium text-gray-900 hover:text-accent transition-colors">Ретро-контент в ВК: как ностальгические посты получают максимальное количество лайков</a>
+                            <p class="text-gray-500 mt-2 mb-1"><span class="font-medium text-gray-700">Задача:</span> Написать статью о ретро-контенте в социальных сетях для компании, которая занимается продвижением.</p>
+                            <p class="text-gray-500"><span class="font-medium text-gray-700">Что я делал:</span> Написал материал, объяснил эмоциональные триггеры ностальгии.</p>
                         </div>
 
-                        <!-- Fitness Center Landing Page -->
                         <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="https://www.webvibestudio.site/projects/project-3/" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Лендинг для фитнес-центра FLUX Athletic
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Создать продающий текст для лендинга фитнес-центра с адаптивными тренировками. Нужно было убедить целевую аудиторию записаться на тренировки, подчеркнув уникальность подхода.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Разработал структуру лендинга с упором на выгоды, написал заголовки, подзаголовки, тексты для блоков с преимуществами, тарифами и отзывами. Использовал языковые триггеры мотивации и создания срочности.
-                            </p>
-                        </div>
-
-                        <!-- Construction Law Landing Page -->
-                        <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="https://www.webvibestudio.site/projects/project-1/" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Лендинг для юридической компании "СтройПраво"
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Создать лендинг для юридической компании, специализирующейся на строительных спорах с использованием ИИ. Требовалось представить инновационный подход к решению юридических задач.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Разработал технически точные, но понятные описания ИИ-технологий, создал структуру с акцентом на результаты и уникальность подхода. Написал тексты для разделов о команде, процессе работы и реализованных проектах.
-                            </p>
+                            <a href="http://atde.ru/admin/2024/01/17/process-razrabotki-veb-sayta-ot-idei-do-realizacii.html" target="_blank" class="text-xl serif font-medium text-gray-900 hover:text-accent transition-colors">Процесс разработки веб-сайта: от идеи до реализации</a>
+                            <p class="text-gray-500 mt-2 mb-1"><span class="font-medium text-gray-700">Задача:</span> Написать обзорную статью о процессе разработки сайтов для веб-студии. Требовался SEO текст для непрофессиональной аудитории с описанием основных этапов работы.</p>
+                            <p class="text-gray-500"><span class="font-medium text-gray-700">Что я делал:</span> Показал процесс, адаптировал профессиональную терминологию для обычных пользователей.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- SEO Texts Section -->
-                <div class="mt-12 pt-8 border-t border-gray-200">
-                    <h3 class="text-2xl serif font-medium mb-8 text-gray-800">SEO тексты</h3>
-                    
-                    <div class="grid gap-8">
-                        <!-- SEO Project 1 -->
-                        <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="https://dpostandart.ru/articles/rol-agentstv-po-podboru-personala-v-krizisnyie-vremena" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Роль агентств по подбору персонала в кризисные времена
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Написать статью для сайта кадрового агентства о роли рекрутинговых компаний в кризисные периоды. Нужен был базовый SEO-текст.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Написал статью, показал практическую ценность услуг агентства в сложные времена.
-                            </p>
-                        </div>
-
-                        <!-- SEO Project 2 -->
-                        <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="https://www.hostcomp.ru/retro-kontent-v-vk-kak-nostalgicheskie-posty-poluchayut-maksimalnoe-kolichestvo-lajkov.html" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Ретро-контент в ВК: как ностальгические посты получают максимальное количество лайков
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Написать статью о ретро-контенте в социальных сетях для компании, которая занимается продвижением.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Написал материал, объяснил эмоциональные триггеры ностальгии. Использовал примеры из практики и структурировал советы по принципу "от теории к практике".
-                            </p>
-                        </div>
-
-                        <!-- SEO Project 3 -->
-                        <div>
-                            <h4 class="text-xl serif font-medium mb-4">
-                                <a href="http://atde.ru/admin/2024/01/17/process-razrabotki-veb-sayta-ot-idei-do-realizacii.html" 
-                                   target="_blank" 
-                                   class="text-gray-900 hover:text-gray-600 transition-colors border-b border-gray-300 hover:border-gray-600">
-                                    Процесс разработки веб-сайта: от идеи до реализации
-                                </a>
-                            </h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Написать обзорную статью о процессе разработки сайтов для веб-студии. Требовался SEO текст для непрофессиональной аудитории с описанием основных этапов работы.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Показал процесс, адаптировал профессиональную терминологию для обычных пользователей.
-                            </p>
-                        </div>
-                    </div>
+                <div>
+                    <a href="https://t.me/texta22" target="_blank" class="text-accent hover:text-gray-900 transition-colors text-lg">Посмотреть примеры постов для Telegram</a>
                 </div>
 
-                <!-- Telegram Posts Section -->
-                <div class="mt-12 pt-8 border-t border-gray-200">
-                    <h3 class="text-2xl serif font-medium mb-8 text-gray-800">Посты для Telegram</h3>
-                    
-                    <div class="grid gap-8">
-                        <!-- Telegram Project 1 -->
-                        <div>
-                            <h4 class="text-xl serif font-medium mb-4">Пост для Сбербанка</h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Написать пост-дайджест для Telegram-канала СберБизнес о новостях в сфере ИИ и технологий. Нужно было упаковать сложную техническую информацию в легко читаемый формат.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Нашел подходящие новости с русскоязычных и англоязычных источников. Каждую новость переписал в формате «что произошло + почему это важно», убрав технический жаргон. Создал картинку для поста.
-                            </p>
-                            
-                            <!-- Post Preview Image -->
-                            <div class="mt-6 p-4 bg-gray-50 rounded-lg">
-                                <p class="text-sm text-gray-600 mb-3">Пример поста:</p>
-                                <img src="post1.png" alt="Пример поста для Telegram-канала СберБизнес о новостях ИИ" class="max-w-full h-auto rounded-md shadow-sm">
-                            </div>
-                        </div>
-
-                        <!-- Telegram Project 2 -->
-                        <div>
-                            <h4 class="text-xl serif font-medium mb-4">Пост для МТС</h4>
-                            <p class="text-gray-600 mb-4">
-                                <strong>Задача:</strong> Создать пост для анонса новой программы офис-туров МТС для молодой аудитории (школьники и студенты). Нужно было привлечь внимание, показать компанию как современного и открытого работодателя, и при этом не скатиться в корпоративную официальность.
-                            </p>
-                            <p class="text-gray-600 mb-6">
-                                <strong>Что я делал:</strong> Выбрал «ироничный» формат. Структурировал пост так, чтобы переход от эмоционального крючка к практической информации был естественным, а призыв к действию не выглядел навязчиво.
-                            </p>
-                            
-                            <!-- Post Preview Image -->
-                            <div class="mt-6 p-4 bg-gray-50 rounded-lg">
-                                <p class="text-sm text-gray-600 mb-3">Пример поста:</p>
-                                <img src="./mtspost.png" alt="Пример поста для анонса офис-туров МТС" class="max-w-full h-auto rounded-md shadow-sm">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- View More Examples Link -->
-                    <div class="mt-8">
-                        <a href="https://t.me/texta22" target="_blank" class="text-gray-600 hover:text-gray-800 transition-colors underline">
-                            Посмотреть другие примеры в Telegram
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-900 text-white">
+    <section id="contact" class="py-20 contact-section">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl serif font-medium mb-8">Давайте работать вместе ✨</h2>
-            <a href="https://t.me/text2321" target="_blank" class="inline-block bg-white text-gray-900 px-8 py-3 text-sm font-medium tracking-wide hover:bg-gray-100 transition-colors">
+            <h2 class="text-3xl md:text-4xl serif font-medium mb-6">Давайте работать вместе</h2>
+            <a href="https://t.me/text2321" target="_blank" class="contact-btn">
                 Написать в Telegram
             </a>
         </div>
